@@ -1,29 +1,43 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import Layout from "../components/layout";
+import { motion } from "framer-motion"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const IndexPage = ({ data }) => {
+  const content = data.markdownRemark.html;
+  const allMessages = content.split("<div");
+  console.log(allMessages);
+  
+  return (
+    <Layout>
+      <div className="preview">
+        <motion.h1
+          initial={{y: "-50vh", opacity: 0}}
+          animate={{y: "25vh", opacity: 1}}
+          transition={{duration: 2, type: "spring", stiffness: 200}}
+        >
+          Hola babe UwU
+        </motion.h1>
+        <motion.h2
+          initial={{y: "-50vh", opacity: 0}}
+          animate={{y: "26vh", opacity: 1}}
+          transition={{delay: 1, duration: 2, type: "spring", stiffness: 125}}
+        >
+          Bueno, parece que hace un ano que estamos juntos :o
+        </motion.h2>
+      </div>
+      <div className="main">
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+      </div>
+    </Layout>
+  )
+};
 
+export const query = graphql`
+query MyQuery {
+  markdownRemark {
+    id
+    html
+  }
+}
+`
 export default IndexPage
