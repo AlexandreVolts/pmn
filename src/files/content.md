@@ -1,8 +1,9 @@
 <div class="chapter">
-    <div class="narrator">
-        Estoy en mi teléfono. Vengo de redescargar Tinder sin esperar nada para la cuarentina. Después de algunas discusiones no muy interesantes, descubro que Tinder ofre durante un mez el modo pasaporte. Bueno, al menos podré juntar el útil con el agradable, así que porqué no probar.
-        Cómo me gustaría aprender el japonés, me pongo en Tokyo. No funciona mucho, en primer lugar, no entiendo mucho de lo qué las chicas dicen, y ellas me parecen un poco extrañas. Y de toda manera hago ningún match con ellas. UnU
-        Pero también me encuentro a algunas chicas de otras países. Y entre ellas, hay una chica llamando Dani. Para Danielle o Daniella. Ella viene de México.
+    <div class="narrator">Estoy en mi teléfono. Vengo de redescargar Tinder sin esperar nada para la cuarentina.</div>
+    <div class="narrator">Después de algunas discusiones no muy interesantes, descubro que Tinder ofre durante un mez el modo pasaporte.</div>
+    <div class="narrator">Bueno, al menos podré juntar el útil con el agradable y aprender a proposito de idiomas, así que porqué no probar.</div>
+    <div>Cómo me gustaría aprender el japonés, me pongo en Tokyo. No funciona mucho, en primer lugar, no entiendo mucho de lo qué las chicas dicen, y ellas me parecen un poco extrañas. Y de toda manera hago ningún match con ellas. UnU
+    Pero también me encuentro a algunas chicas de otras países. Y entre ellas, hay una chica llamando Dani. Para Danielle o Daniella. Ella viene de México.
     </div>
 </div>
 <div class="chapter">

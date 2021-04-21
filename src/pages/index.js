@@ -6,7 +6,7 @@ import Chat from "../components/chat";
 
 const IndexPage = ({ data }) => {
   const content = data.markdownRemark.html;
-  const allMessages = content.split("<div class=\"chapter\">").slice(1);
+  const allMessages = content.split("<div class=\"chapter\">").slice(1).map((chapter) => chapter.split("<div "));
   const [triggered, setIsTriggered] = React.useState(false);
   
   return (
@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
       <div className="preview">
         <motion.div
           animate={{opacity: 0}}
-          transition={{delay: 8}}
+          transition={{delay: 7}}
         >
           <motion.h1
             initial={{y: "-50vh", opacity: 0}}
@@ -35,13 +35,13 @@ const IndexPage = ({ data }) => {
           <motion.h2
             initial={{opacity: 0}}
             animate={{opacity: 1}}
-            transition={{delay: 8, duration: 2}}
+            transition={{delay: 7, duration: 2}}
           >
             <i>Por favor, clica sobre este texto para empezar</i>
           </motion.h2>
         </div> }
       </div>
-      { triggered && <Chat messages={allMessages}/> }
+      { triggered && <Chat messages={allMessages[0]}/> }
     </Layout>
   );
 };
