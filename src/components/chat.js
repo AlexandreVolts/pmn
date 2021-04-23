@@ -1,26 +1,25 @@
 import * as React from "react";
 import "./chat.css";
 import Message from "./message";
+import AnimatedBackground from "./animatedBackground";
 
 const Chat = ({ messages }) =>
 {
-    const [stack, setStack] = React.useState([]);
-    const addMessage = React.useCallback(() => {
-        if (messages.length === 0)
-            return;
-        setStack([...stack, messages.shift()]);
-        setTimeout(() => {
-            addMessage();
-        }, 5000);
-    }, [stack, setStack, messages]);
+    const [cursor, setCursor] = React.useState(0);
     
     React.useEffect(() => {
-        addMessage();
-    }, []);
+        if (cursor >= messages.length)
+            return;
+        const timer = setTimeout(() => {
+            setCursor(cursor + 1);
+        }, messages[cursor - 1] ? messages[cursor - 1].length * 66 : 0);
+
+        return (() => clearInterval(timer));
+    });
     
     function generateStack()
     {
-        return (stack.map((message, index) => {
+        return (messages.slice(0, cursor).map((message, index) => {
             const type = message.substr(message.indexOf("=\""), message.indexOf("\">"));
             return (
                 <Message key={index} content={"<div " + message} className={type} />
@@ -30,7 +29,13 @@ const Chat = ({ messages }) =>
 
     return (
         <div className="chat">
-            {generateStack()}
+            <AnimatedBackground />
+            <div className="content">
+                <div className="top-layer">
+
+                </div>
+                {generateStack()}
+            </div>
         </div>
     );
 };

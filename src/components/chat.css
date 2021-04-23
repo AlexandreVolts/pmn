@@ -1,6 +1,24 @@
 .chat {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 600px;
+    height: 100%;
+    border-left: 20px black outset;
+    border-right: 20px black outset;
+    border-top: 60px black outset;
+    border-bottom: 60px black outset;
+    border-radius: 25px;
+}
+.chat .content {
+    font-size: 1.2rem;
+    position: relative;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: scroll;
+    z-index: 2;
+    height: 100%;
 }

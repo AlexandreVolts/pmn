@@ -4,7 +4,7 @@ import "./message.css";
 const Message = ({content, type}) =>
 {
     return (
-        <div className={type} dangerouslySetInnerHTML={{__html: content}}></div>
+        <div className={type + " message"} dangerouslySetInnerHTML={{__html: content}}></div>
     );
 };
 

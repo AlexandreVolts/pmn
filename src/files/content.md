@@ -1,10 +1,21 @@
 <div class="chapter">
-    <div class="narrator">Estoy en mi teléfono. Vengo de redescargar Tinder sin esperar nada para la cuarentina.</div>
+    <div class="narrator">Estoy en mi teléfono. Vengo de redescargar Tinder sin esperar mucho para la cuarentina.</div>
     <div class="narrator">Después de algunas discusiones no muy interesantes, descubro que Tinder ofre durante un mez el modo pasaporte.</div>
     <div class="narrator">Bueno, al menos podré juntar el útil con el agradable y aprender a proposito de idiomas, así que porqué no probar.</div>
-    <div>Cómo me gustaría aprender el japonés, me pongo en Tokyo. No funciona mucho, en primer lugar, no entiendo mucho de lo qué las chicas dicen, y ellas me parecen un poco extrañas. Y de toda manera hago ningún match con ellas. UnU
-    Pero también me encuentro a algunas chicas de otras países. Y entre ellas, hay una chica llamando Dani. Para Danielle o Daniella. Ella viene de México.
-    </div>
+    <div class="narrator">Cómo me gustaría aprender el japonés, me pongo en Tokyo.</div>
+    <div class="narrator">No funciona mucho, en primer lugar, no entiendo mucho de lo qué las chicas dicen, y ellas me parecen un poco extrañas.</div>
+    <div class="narrator">Y de toda manera hago ningún match con ellas. UnU</div>
+    <div class="narrator">Pero también me encuentro a algunas chicas de otras países.</div>
+    <div class="narrator">Y entre ellas, hay una chica llamando Dani. Para Danielle o Daniella.</div>
+    <div class="narrator">Ella vive de México.</div>
+    <div class="left">This moment when I don't know if I must speak English or Spanish >.<</div>
+    <div class="left">What I suggest is, you speak Spanish and I speak English, because I am a dumb when I must speak Spanish, but I really want to (re)learn it :p</div>
+    <div class="left">Me gusta la lectura (y yo muy aprecio las chicas que leen), pero no me gusta la literatura de horor :(<br/>
+    (Sorry I wrote 3 messages in a row AND I switch language, really bad start)</div>
+    <div class="right">Jajaja You are very hilarous</div>
+    <div class="right">But I dumb too 'cause</div>
+    <div class="right">I don't speak much english</div>
+    <div class="right">Solo quiero conocer a mas personas, por esto de la "cuarenta"</div>
 </div>
 <div class="chapter">
  Al inicio, obvio, no espero nada de ella, como para las otras. Pero al menos tenemos cosas que decir, aunque mi nivel en español es... Meh. Hablamos de su Red cross sobre su teléfono, y también hablamos de cómo la gente coquetea en México y Francia. También hablemos de las especialidades gastronomía de nuestros países. Como el famoso bœuf bourguignon. UwU
