@@ -3,35 +3,28 @@ import { graphql } from "gatsby";
 import { motion } from "framer-motion";
 import Layout from "../components/layout";
 import Chat from "../components/chat";
+import Splash from "../components/splash";
+import VideoBackground from "../components/videoBackground";
 
 const IndexPage = ({ data }) => {
   const content = data.markdownRemark.html;
-  const allMessages = content.split("<div class=\"chapter\">").slice(1).map((chapter) => chapter.split("<div "));
+  const chapters = content.split("<div class=\"chapter ").slice(1);
+  const allMessages = chapters.map((chapter) => chapter.split("<div "));
   const [triggered, setIsTriggered] = React.useState(false);
+  const [background, setBackground] = React.useState(undefined);
+  const [chapter, setChapter] = React.useState(0);
+  
+  const onClickOnStart = () => {
+    setIsTriggered(true);
+    setBackground(chapters[chapter].substr(0, chapters[chapter].indexOf("\"")));
+  };
   
   return (
     <Layout>
+      <VideoBackground video={background} />
       <div className="preview">
-        <motion.div
-          animate={{opacity: 0}}
-          transition={{delay: 6}}
-        >
-          <motion.h1
-            initial={{y: "-50vh", opacity: 0}}
-            animate={{y: "25vh", opacity: 1}}
-            transition={{duration: 2, type: "spring", stiffness: 200}}
-          >
-            Hola babe UwU
-          </motion.h1>
-          <motion.h2
-            initial={{y: "-50vh", opacity: 0}}
-            animate={{y: "26vh", opacity: 1}}
-            transition={{delay: 1, duration: 2, type: "spring", stiffness: 125}}
-          >
-            Bueno, parece que hace un ano que estamos juntos :o
-          </motion.h2>
-        </motion.div>
-        { !triggered && <div onClick={() => setIsTriggered(true)}>
+        <Splash />
+        { !triggered && <div onClick={onClickOnStart}>
           <motion.h2
             initial={{opacity: 0}}
             animate={{opacity: 1}}
@@ -41,7 +34,8 @@ const IndexPage = ({ data }) => {
           </motion.h2>
         </div> }
       </div>
-      { triggered && <Chat messages={allMessages[0]}/> }
+      <button>Empezar el capitulo</button>
+      { triggered && <Chat messages={allMessages[chapter]} /> }
     </Layout>
   );
 };

@@ -1,4 +1,4 @@
-<div class="chapter">
+<div class="chapter fenetre">
     <div class="narrator">Estoy en mi teléfono. Vengo de redescargar Tinder sin esperar mucho para la cuarentina.</div>
     <div class="narrator">Después de algunas discusiones no muy interesantes, descubro que Tinder ofre durante un mez el modo pasaporte.</div>
     <div class="narrator">Bueno, al menos podré juntar el útil con el agradable y aprender a proposito de idiomas, así que porqué no probar.</div>
@@ -16,10 +16,21 @@
     <div class="right">But I dumb too 'cause</div>
     <div class="right">I don't speak much english</div>
     <div class="right">Solo quiero conocer a mas personas, por esto de la "cuarenta"</div>
+    <div class="left">Te recuerdes de eso, verdad ? :3</div>
+    <div class="right">Obvio. :3</div>
+    <div class="left">Es que no esperaba nada contigo a este momento, solo hablar un poco. xD</div>
+    <div class="right">*nalgada* UnU</div>
+    <div class="left">UwU</div>
+    <div class="narrator">Al menos tenemos cosas que decir, aunque mi nivel en español fue... Meh.</div>
+    <div class="narrator">Hablamos de su Red cross sobre su teléfono, y también hablamos de cómo la gente coquetea en México y Francia.</div>
+    <div class="narrator">También hablamos de las especialidades gastronomía de nuestros países. Como el famoso bœuf bourguignon. UwU</div>
 </div>
 <div class="chapter">
- Al inicio, obvio, no espero nada de ella, como para las otras. Pero al menos tenemos cosas que decir, aunque mi nivel en español es... Meh. Hablamos de su Red cross sobre su teléfono, y también hablamos de cómo la gente coquetea en México y Francia. También hablemos de las especialidades gastronomía de nuestros países. Como el famoso bœuf bourguignon. UwU
-    Rápidamente siento algo para esta chica, que ahora voy a llamar "tú" (hola amor). :3 Es que, no sé, me gusta hablar con ella y me sorprendo esperar sus mensajes varias veces. Me pongo feliz cuando por fin los recibo. En fin, "inocentemente", terminamos hablando por Messenger en lugar de Tinder. Te digo que eres mi 100ema amiga. 
+    <div class="narrator">Rápidamente siento que se pasa algo con esta chica.</div>
+    <div class="narrator">Es que, no sé, me gusta hablar con ella y me sorprendo esperar sus mensajes varias veces. Me pongo feliz cuando por fin los recibo.</div>
+    <div class="narrator">En fin, "inocentemente", terminamos hablando por Messenger en lugar de Tinder. Descubro que eres mi 100ema amiga.</div>
+</div>
+<div class="chapter">
     Y, bueno, hablamos de cosas más privadas, por ejemplo a propósito de nuestras fantasías o de nuestras primeras veces, después de sólo algunos días juntos.
     Sí, a este momento ambos sabíamos lo que iba a producirse. La alquimia fue casi inmediata y espontánea. Y claro no es algo que esperaba viniendo de Tinder. En fin, la última etapa es este atracción que tengo para ti, que crece "un poco" (es decir, mucho <.<) todos los días. Paso demasiado tiempo hablar contigo con Google Trad y un diccionario para entender el maximum de lo que dices, y para responderte. A veces tomaba horas completas. Pero no me molestia, estaba contento así. Es que teníamos muchas cosas que decirnos, nos mandábamos algo como muchos mensajes cada vez que nos respondimos. Me hablas de tu vida, de cómo el estado de Oaxaca est bonito, de tu familia. De tu vida. Bueno, para ser honesto, si fue una otra persona seguramente no me habría importado. Pero tú tenías una manera de decir las cosas y un estilo que me gusta demasiado. Y más que nada estoy enamorado de ti y esa razón es suficiente para que, incluso si me hablas de una mosca que se echa un pedo me interesaría. (Weno es que me influyes en el arto de la gracia graciosa UwU) También me compartiste tus imágenes con textos blancos sobre imágenes de lugares o personas. Y me dices que te gustaba yaoi y BTS, y de verdad no creí que iba a juzgar tan poco un chica a quien le gusta yaoi y BTS. Al contrario, casi me gustaba y, bueno, es que ahora cuando entiendo una música de BTS directamente me da un sentimiento de paz porque pienso en ti. Tú me compartiste algunas músicas que te gusta, como Latinoamerica y ojos color sol, y te compartí "Je suis", y son tantos de pequeños pedazos de ti que se quedan en mi corazón. Aquí me hablas de la operación cóndor (de verdad es algo que me ha quedado muy bien :0). Y me dices que antes escribiste libros también, de tipo novels trágicos. Pero dicias que no te gustaba lo que has escrito. Lo que me parece triste, porque escribes muy bien. :(
     Por otro lado me preguntas enviarte audios de mi voz, y aquí la descubres. Te envío cosas en español pero más que nada en francés (más fácil y también te parece gustar más 7w7). También me haces descubrir los alburs... :3 Y que con tu exnovios era muy fría, lo que a mí me parece muy extraño como conmigo eres una chica demasiada dulce y adorable. Descubrí que tenías 5 novios antes de yo, mientras que yo te hablo de mis dos ex novias. Aunque normalemente no se hace, me gusta mucho este transparencia y el hecho de que podemos hablar de nuestras vidas, incluso este tipo de cosas que normalmente no se dice. :3 Entonces me hablas de tu segundo novio que te ha dolido mucho. UnU Y de tu último novio antes de yo que te gustaba mucho. :3 

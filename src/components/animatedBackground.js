@@ -15,7 +15,7 @@ const AnimatedBackground = () =>
         const spawnHeart = () => {
             return ({
                 x: ~~(Math.random() * width),
-                y: height,
+                y: height + 300,
                 size: ~~(Math.random() * 300) + 50,
                 color: `rgba(255, 60, 60, ${Math.random() / 3})`,
                 speed: Math.random() / 2 + 0.2

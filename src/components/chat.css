@@ -4,8 +4,8 @@
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 600px;
-    height: 100%;
+    max-width: 550px;
+    height: calc(100% - 60px * 2);
     border-left: 20px black outset;
     border-right: 20px black outset;
     border-top: 60px black outset;
@@ -18,6 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow-x: hidden;
     overflow-y: scroll;
     z-index: 2;
     height: 100%;

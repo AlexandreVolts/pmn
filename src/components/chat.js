@@ -8,7 +8,7 @@ const Chat = ({ messages }) =>
     const [cursor, setCursor] = React.useState(0);
     
     React.useEffect(() => {
-        if (cursor >= messages.length)
+        if (!messages || cursor >= messages.length)
             return;
         const timer = setTimeout(() => {
             setCursor(cursor + 1);
@@ -20,9 +20,10 @@ const Chat = ({ messages }) =>
     function generateStack()
     {
         return (messages.slice(0, cursor).map((message, index) => {
-            const type = message.substr(message.indexOf("=\""), message.indexOf("\">"));
+            const types = message.substr(message.indexOf("=\""), message.indexOf("\">"));
+
             return (
-                <Message key={index} content={"<div " + message} className={type} />
+                <Message key={index} content={"<div " + message} className={types[0]} />
             );
         }));
     }
