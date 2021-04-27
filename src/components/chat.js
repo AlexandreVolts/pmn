@@ -3,19 +3,22 @@ import "./chat.css";
 import Message from "./message";
 import AnimatedBackground from "./animatedBackground";
 
-const Chat = ({ messages }) =>
+const Chat = ({ messages, setIsTriggered }) =>
 {
     const [cursor, setCursor] = React.useState(0);
     
     React.useEffect(() => {
-        if (!messages || cursor >= messages.length)
+        if (!messages || cursor >= messages.length) {
+            setCursor(0);
+            setIsTriggered(false);
             return;
+        }
         const timer = setTimeout(() => {
             setCursor(cursor + 1);
-        }, messages[cursor - 1] ? messages[cursor - 1].length * 66 : 0);
+        }, messages[cursor - 1] ? messages[cursor - 1].length * 75 : 0);
 
         return (() => clearInterval(timer));
-    });
+    }, [messages, cursor, setIsTriggered]);
     
     function generateStack()
     {

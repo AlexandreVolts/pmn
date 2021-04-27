@@ -19,3 +19,8 @@
     margin-left: calc(25% - 2rem);
     width: 75%;
 }
+.date {
+    padding: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}

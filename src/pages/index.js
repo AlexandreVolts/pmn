@@ -12,11 +12,14 @@ const IndexPage = ({ data }) => {
   const allMessages = chapters.map((chapter) => chapter.split("<div "));
   const [triggered, setIsTriggered] = React.useState(false);
   const [background, setBackground] = React.useState(undefined);
-  const [chapter, setChapter] = React.useState(0);
+  const [chapter, setChapter] = React.useState(-1);
   
   const onClickOnStart = () => {
+    const cur = chapter + 1;
+    
     setIsTriggered(true);
-    setBackground(chapters[chapter].substr(0, chapters[chapter].indexOf("\"")));
+    setChapter(cur);
+    setBackground(chapters[cur].substr(0, chapters[cur].indexOf("\"")));
   };
   
   return (
@@ -24,18 +27,24 @@ const IndexPage = ({ data }) => {
       <VideoBackground video={background} />
       <div className="preview">
         <Splash />
-        { !triggered && <div onClick={onClickOnStart}>
+        { !triggered && <div>
           <motion.h2
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{delay: 6, duration: 2}}
           >
-            <i>Por favor, clica sobre este texto para empezar</i>
+            <motion.button
+              onClick={onClickOnStart}
+              initial={{y: "-50vh", opacity: 0}}
+              animate={{y: "15vh", opacity: 1}}
+              transition={{delay: 7, duration: 2, type: "spring", stiffness: 200}}
+            >
+              Empezar el capitulo
+            </motion.button>
           </motion.h2>
         </div> }
       </div>
-      <button>Empezar el capitulo</button>
-      { triggered && <Chat messages={allMessages[chapter]} /> }
+      { triggered && <Chat messages={allMessages[chapter]} setIsTriggered={setIsTriggered} /> }
     </Layout>
   );
 };

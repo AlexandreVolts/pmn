@@ -11,6 +11,7 @@
     border-top: 60px black outset;
     border-bottom: 60px black outset;
     border-radius: 25px;
+    z-index: 2;
 }
 .chat .content {
     font-size: 1.2rem;
