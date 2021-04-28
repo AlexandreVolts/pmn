@@ -1,3 +1,10 @@
+<div class="chapter">
+    <div class="left">Hola babe :3</div>
+    <div class="left">Bueno, parece que hace un año que estamos juntos UwU</div>
+    <div class="left">Te he preparado un pequeño regalo, espero que te va a encantar. :3</div>
+    <div class="left">Por favor pulsa sobre el buton debajo de este mensaje :0</div>
+</div>
+
 <div class="chapter fenetre">
     <div class="narrator">Estoy en mi teléfono. Vengo de redescargar Tinder sin esperar mucho para la cuarentina.</div>
     <div class="narrator">Después de algunas discusiones no muy interesantes, descubro que Tinder ofre durante un mez el modo pasaporte.</div>
@@ -6,8 +13,8 @@
     <div class="narrator">No funciona mucho, en primer lugar, no entiendo mucho de lo qué las chicas dicen, y ellas me parecen un poco extrañas.</div>
     <div class="narrator">Y de toda manera hago ningún match con ellas. UnU</div>
     <div class="narrator">Pero también me encuentro a algunas chicas de otras países.</div>
-    <div class="narrator">Y entre ellas, hay una chica llamando Dani. Para Danielle o Daniella.</div>
-    <div class="narrator">Ella vive de México.</div>
+    <div class="narrator">Y entre ellas, hay una chica llamada Dani. Para Danielle o Daniella.</div>
+    <div class="narrator">Ella vive en México.</div>
     <div class="date">12/04/2020</div>
     <div class="left">This moment when I don't know if I must speak English or Spanish >.<</div>
     <div class="left">What I suggest is, you speak Spanish and I speak English, because I am a dumb when I must speak Spanish, but I really want to (re)learn it :p</div>
@@ -58,6 +65,7 @@
     <div class="left">Gracias! (Es la primera parte de mi plan diabolico, para que vienes en Francia :3)</div>
 </div>
 <div class="chapter riviere">
+    <div class="date">15/04/2020</div>
     <div class="right">Disculpa por no contestar :( El tiempo paso voldano</div>
     <div class="left">De hecho tenemos todo el lockdown delante nosotros, and your life is a priority above that discussion! So it is not bad if you don't answer during many days</div>
     <div class="left">But I will be sad if you wait too much :x</div>

@@ -3,14 +3,12 @@ import "./chat.css";
 import Message from "./message";
 import AnimatedBackground from "./animatedBackground";
 
-const Chat = ({ messages, setIsTriggered }) =>
+const Chat = ({ messages }) =>
 {
     const [cursor, setCursor] = React.useState(0);
     
     React.useEffect(() => {
-        if (!messages || cursor >= messages.length) {
-            setCursor(0);
-            setIsTriggered(false);
+        if (!messages || cursor > messages.length) {
             return;
         }
         const timer = setTimeout(() => {
@@ -18,7 +16,7 @@ const Chat = ({ messages, setIsTriggered }) =>
         }, messages[cursor - 1] ? messages[cursor - 1].length * 75 : 0);
 
         return (() => clearInterval(timer));
-    }, [messages, cursor, setIsTriggered]);
+    }, [messages, cursor]);
     
     function generateStack()
     {
@@ -32,15 +30,17 @@ const Chat = ({ messages, setIsTriggered }) =>
     }
 
     return (
-        <div className="chat">
+        <>
             <AnimatedBackground />
-            <div className="content">
+            <div className="chat">
                 <div className="top-layer">
 
                 </div>
-                {generateStack()}
+                <div className="content">
+                    {generateStack()}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

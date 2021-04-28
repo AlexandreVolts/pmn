@@ -23,7 +23,7 @@ const AnimatedBackground = () =>
         };
         const drawHeart = (heart) => {
             const w = heart.size;
-            const h = heart.size * 1.3;
+            const h = heart.size * 1.1;
             ctx.fillStyle = heart.color;
             ctx.beginPath();
             ctx.moveTo(heart.x, heart.y + h / 2);
