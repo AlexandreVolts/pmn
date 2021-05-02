@@ -41,6 +41,7 @@
 .phone .screen {
     background-color: rgba(20, 20, 40);
     height: calc(100% - 40px - 30px);
+    overflow-y: auto;
 }
 .phone .bottom-menu {
     position: relative;
