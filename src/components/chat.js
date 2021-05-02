@@ -3,20 +3,27 @@ import "./chat.css";
 import Message from "./message";
 import AnimatedBackground from "./animatedBackground";
 
-const Chat = ({ messages }) =>
+const Chat = ({ messages, setIsFinished }) =>
 {
     const [cursor, setCursor] = React.useState(0);
+    const messageEndRef = React.createRef(null);
     
     React.useEffect(() => {
-        if (!messages || cursor > messages.length) {
+        if (cursor > messages.length) {
+            setIsFinished(true);
             return;
         }
         const timer = setTimeout(() => {
             setCursor(cursor + 1);
-        }, messages[cursor - 1] ? messages[cursor - 1].length * 75 : 0);
+        }, messages[cursor - 1] ? messages[cursor - 1].length * 70 : 0);
 
         return (() => clearInterval(timer));
-    }, [messages, cursor]);
+    }, [messages, cursor, setIsFinished]);
+
+    React.useEffect(() => {
+        console.log(messageEndRef.current?.scrollIntoView);
+        messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [messages, messageEndRef]);
     
     function generateStack()
     {
@@ -33,11 +40,9 @@ const Chat = ({ messages }) =>
         <>
             <AnimatedBackground />
             <div className="chat">
-                <div className="top-layer">
-
-                </div>
                 <div className="content">
                     {generateStack()}
+                    <div ref={messageEndRef}></div>
                 </div>
             </div>
         </>

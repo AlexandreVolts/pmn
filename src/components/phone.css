@@ -15,6 +15,9 @@
     border-radius: 25px;
     z-index: 2;
 }
+.phone .button-active {
+    animation: bright 2s ease-in-out infinite alternate;
+}
 .phone-button {
     color: white;
     border: none;
@@ -36,11 +39,20 @@
     background-position: right;
 }
 .phone .screen {
-    height: 95%;
+    background-color: rgba(20, 20, 40);
+    height: calc(100% - 40px - 30px);
 }
 .phone .bottom-menu {
     position: relative;
     background-color: black;
     z-index: 1;
     padding: 20px 0;
+}
+@keyframes bright {
+    0% {
+        box-shadow: 0px 0px 20px white inset;
+    }
+    100% {
+        box-shadow: 0px 0px 0px white inset;
+    }
 }

@@ -1,29 +1,30 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 import "./menu.css";
 
 const Menu = ({numberOfChapters, onClickOnChapter}) => {
-    const colors = ["#1abc9c", "#3498db", "#f1c40f", "#e67e22", "#e74c3c"];
+    const colors = ["#34ace0", "#706fd3", "#40407a", "#2c2c54", "#474787"];
     const generateItems = () => {
         const output = [];
         
         for (let i = 0; i < numberOfChapters; i++) {
             output.push(
-                <button
+                <motion.button
                     key={i}
                     onClick={() => onClickOnChapter(i)}
+                    initial={{scale: 1.5, opacity: 0}}
+                    animate={{scale: 1, opacity: 1}}
+                    transition={{delay: 0.1 * i}}
                     style={{backgroundColor: colors[~~(Math.random() * colors.length)]}}
                 >
                     Chapter {i}
-                </button>);
+                </motion.button>
+            );
         }
         return (output);
     };
     
-    return (
-        <div class="main-menu">
-            {generateItems()}
-        </div>
-    );
+    return (<div class="main-menu">{ generateItems() }</div>);
 };
 
 export default Menu;
